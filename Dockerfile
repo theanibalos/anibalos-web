@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM nginx:stable-alpine
+FROM nginx:alpine
 
 # Copia los archivos estáticos al directorio por defecto de nginx
 COPY html /usr/share/nginx/html
