@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx
+    container_name: anibalos_nginx
+    ports:
+      - "8090:80"
+    volumes:
+      - "./html:/usr/share/nginx/html"
+    restart: always
